@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="wood-image">
+        <img src="{{ url_for('static', filename='images/wood-texture.jpg') }}" alt="Picture of brown wood texture board">
+        <div class="top-bar">
+            <h1>Welcome to the Word Game!</h1>
+        </div>
+    </section>
+
+    <section class="button-to-the-game">
+        <p>Click Start to begin.</p>
+        <a href="/game" class="button">Start Game</a>
+    </section>
+    
+    
+</body>
+</html>
