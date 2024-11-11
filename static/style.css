@@ -1,9 +1,10 @@
-body {
+html, body {
     align-items: flex-start;
     height: 100vh;
-    margin: 0;
-    padding-top: 5px;
     background-color: #5F8575;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -11,12 +12,14 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
 }
 
 .wood-image img {
     width: 100%;
-    height: 20em;
+    height: 150px;
     display: block;
+    object-fit: cover;
 }
 
 .top-bar {
@@ -38,7 +41,13 @@ body {
 
 .top-bar h1 {
     font-size: 60px;
+    margin: 0;
 }
+
+.top-bar p {
+    font-size: 20px;
+}
+
 
 .button-to-the-game {
     display: flex;
@@ -47,20 +56,23 @@ body {
     align-items: center;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding-top: 20px;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 24px;
-    background-color: red;
+    background-color: black;
     margin-top: 5px;
     border-radius: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-.button:hover {
-    background-color: darkblue;
+.button-to-the-game p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
 }
+

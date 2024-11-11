@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-app = Flask(__name__, template_folder='home')
+app = Flask(__name__, template_folder='screens')
 
 @app.route('/')
 def home():
